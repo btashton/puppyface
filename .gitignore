@@ -1,0 +1,7 @@
+*.pyo
+*.pyc
+venv/
+execute/
+eigenModel.xml
+imgmeta.json
+result.json
