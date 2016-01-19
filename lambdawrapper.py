@@ -47,8 +47,8 @@ def apihandler(event, context):
     if resp.status_code != 200:
         return {"error": "Could not fetch image"}
 
-    if resp.headers['Content-Type'] != 'image/jpeg':
-        return {"error": "Invalid url type"}
+    if resp.headers['Content-Type'] not in ['image/jpeg', 'image/png']:
+        return {"error": "Invalid img type"}
 
     img_file.write(resp.content)
     img_file.close()
