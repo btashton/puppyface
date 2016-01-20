@@ -9,7 +9,7 @@ var FaceMatch = React.createClass({
   render: function() {
     return (
       <div className="faceMatch">
-        <h1>Starwars Facematch API</h1>
+        <h1>Star Wars Facematch API</h1>
         <GithubForm onUpdateChar={this.updateChar}/>
         <div>Character Match: {this.state.subject}
           <br />
